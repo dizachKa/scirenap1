@@ -1,0 +1,67 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200px;
+}
+p{
+    color: blue;
+}
+*{
+    margin: 0; /*внешние отступы*/
+    padding: 0;/*внутренние отступы */
+}
+.header{
+    padding: 30px 0;/*отступы идут верх и справа*/
+}
+.header__container{
+    max-width: 1069px;
+    margin-inline: auto; /*здесь нам дают отступы слева напрво */
+}
+.header__nav{
+    display: flex; /*встали в один ряд*/
+    justify-content: space-between;
+    align-items: center; /*выравнивание по вертикали*/
+}
+.header__list{
+    display: flex;  /*элементы выстраиваются в ряд*/
+    gap: 50px;
+}
+ul{
+    list-style: none;
+}
+.header__list-link{
+    font-size: 15px; /*размер*/
+    font-weight: 700; /* жирность текста*/
+    letter-spacing: -0,47px; /*растояние между буквами*/
+
+}
+.header__list-link.active{
+    color: rgb(33, 11, 54);
+    border-bottom: 2px solid;
+    padding-bottom: 10px; /*нижний отступ*/
+    transition: color o.3s; /*время за которое переход начнется и закончится*/
+}
+.header__list-link:hover{ /*псевдокласс для эффекта стил применяется когдаменяется определенное состояние элемента к примеру при кликании как делаем мы*/
+
+    color: blueviolet;
+}
+a{
+    text-decoration: none;
+}
+.header__button{
+    font-weight: 700px;/*жирность текста*/
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: rgb(210, 204, 216);
+    padding: 10px 50px;
+    background-color: rgb(16, 16, 207);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.header__button:hover{
+    opacity: 60%; прозрачность
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
